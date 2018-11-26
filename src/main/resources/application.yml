@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+spring:
+    datasource:
+        name: test
+        url: jdbc:mysql://192.168.18.252:3306/hmserver
+        username: root
+        password: 940526
+        driver-class-name: com.mysql.jdbc.Driver
+    thymeleaf:
+      cache: true
+      prefix: classpath:/templates/
+      suffix: .html
+      mode: HTML5
+    mvc:
+      static-path-pattern: /static/**
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.springboot
